@@ -19,6 +19,7 @@ namespace VendorAndOrderTracker.Controllers
       Order myOrder = new Order(orderName);
       return RedirectToAction("Index");
     }
+    
     [HttpGet("/orders/new")]
     public ActionResult New()
     {

@@ -17,7 +17,8 @@ namespace VendorAndOrderTracker.Models
       Orders = new List<Order> { };
     }
     public static List<Vendor> GetAll()
-    {
+    {  
+      
       return _instances;
     }
     public static void ClearAll()
