@@ -6,8 +6,13 @@ using System;
 namespace Orders.Tests 
 {
   [TestClass]
-  public class OrderTests
+  public class OrderTests : IDisposable
   {
+      public void Dispose()
+    {
+      Order.ClearAll();
+    }
+  
     [TestMethod]
     public void OrderConstructor_CreateInstanceOfOrder_Order()
     {
@@ -22,6 +27,14 @@ namespace Orders.Tests
       Order newOrder = new Order(orderName);
       string result = newOrder.OrderName;
       Assert.AreEqual(orderName, result);
+    }
+    [TestMethod]
+
+    public void GetAll_ReturnsEmptyList_OrderList()
+    {
+      List<Order> newOrderList = new List<Order> { };
+      List<Order> result = Order.GetAll();
+      CollectionAssert.AreEqual(newOrderList, result);
     }
   }
 }
