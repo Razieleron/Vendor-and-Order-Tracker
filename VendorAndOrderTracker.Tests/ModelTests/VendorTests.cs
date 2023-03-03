@@ -15,4 +15,4 @@ namespace VendorAndOrderTracker.Tests
     Assert.AreEqual(typeof(Vendor), newVendor.GetType());
   }
   }
-}
+} 
