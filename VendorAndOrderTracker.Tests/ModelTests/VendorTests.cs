@@ -6,21 +6,33 @@ using System;
 namespace VendorAndOrderTracker.Tests
 {
   [TestClass]
-    public class VendorTests
+    public class VendorTests : IDisposable
     {
-    [TestMethod]
-    public void VendorConstructor_CreatesInstanceOfVendor_Vendor()
-    {
-      Vendor newVendor = new Vendor("Maria's Muffins");
-      Assert.AreEqual(typeof(Vendor), newVendor.GetType());
+      public void Dispose()
+      {
+        Vendor.ClearAll();
+      }
+      [TestMethod]
+      public void VendorConstructor_CreatesInstanceOfVendor_Vendor()
+      {
+        Vendor newVendor = new Vendor("Maria's Muffins");
+        Assert.AreEqual(typeof(Vendor), newVendor.GetType());
+      }
+      [TestMethod]
+      public void GetName_ReturnsVendorName_String()
+      {
+        string name = "Test Vendor";
+        Vendor newVendor = new Vendor(name);
+        string result = newVendor.Name;
+        Assert.AreEqual(name, result);
+      }
+      [TestMethod]
+      public void GetId_ReturnsVendorId_Int()
+      {
+        string name = "Test Vendor";
+        Vendor newVendor = new Vendor(name);
+        int result = newVendor.Id;
+        Assert.AreEqual(1, result);
+      }
     }
-    [TestMethod]
-    public void GetName_ReturnsVendorName_String()
-    {
-      string name = "Test Vendor";
-      Vendor newVendor = new Vendor(name);
-      string result = newVendor.Name;
-      Assert.AreEqual(name, result);
-    }
-  }
-} 
+  } 
