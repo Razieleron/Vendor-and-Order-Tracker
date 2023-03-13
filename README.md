@@ -1,10 +1,10 @@
-# Music Organizer web app
+# Vendor and Order Tracker Application
 
-##### By _Asia Kaplanyan, Eliot Gronstal, Jannon Sielaff, Luckie_
+##### By _Jannon Sielaff_
 
 #### _Description_
 
-_A web application that allows user create catalogues with their music collection and search by an artist._
+_A web application that allows user create vendors and orders._
 
 ## Technologies Used
 
@@ -15,14 +15,13 @@ _A web application that allows user create catalogues with their music collectio
 ## Setup Instructions
 
 1. Clone this repo.
-
-2. Open your terminal (e.g., Terminal or GitBash) and navigate to this project's production directory called "MusicOrganizer".
-3. In the command line, run the command "dotnet run" to compile and execute the console application. Since this is a console application, you'll interact with it through text commands in your terminal.
-4. Optionally, you can run "dotnet build" to compile this console app without running it.
+2. Open your terminal (e.g., Terminal or GitBash) and navigate to this project's production directory called "VendorAndOrderTracker".
+3. In the command line, run the command "dotnet run" to compile and execute the console application. Since this is a web application, you'll interact with it through you web browser.
+4. Optionally, you can run "dotnet build" to compile this app without running it.
 
 ## Test Instructions
 
-1. Open your terminal (e.g., Terminal or GitBash) and navigate to this project's testing directory called "MusicOrganizer.Tests".
+1. Open your terminal (e.g., Terminal or GitBash) and navigate to this project's testing directory called "VendorAndOrderTracker.Tests".
 2. In the command line, run the command "dotnet testrun" to run the tests. The results of running the tests will appear in the terminal.
 
 ## Known Bugs
@@ -33,7 +32,7 @@ _A web application that allows user create catalogues with their music collectio
 
 MIT
 
-* Copyright (c) _2023_ _Asia Kaplanyan, Eliot Gronstal, Jannon Sielaff, Luckie_
+* Copyright (c) _2023_ _Jannon Sielaff_
 
 MIT License
 
